@@ -11,9 +11,9 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/atulb123/dvc",
     author_email="atulmysuru@gmail.com",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
-    # packages=["src"],
+    # package_dir={"": "src"},
+    # packages=find_packages(where="src"),
+    packages=["src"],
     license="GNU",
     python_requires=">=3.6",
     install_requires=[
