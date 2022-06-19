@@ -28,7 +28,6 @@ def train(config_path):
     elastic_net_parameters = config["estimators"]["ElasticNet"]["params"]
     alpha = elastic_net_parameters["alpha"]
     l1_ratio = elastic_net_parameters["l1_ratio"]
-
     train = pd.read_csv(train_data_path)
     train_y = train[target_column]
     train_x = train.drop(target_column, axis=1)
